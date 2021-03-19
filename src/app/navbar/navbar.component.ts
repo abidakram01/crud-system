@@ -1,9 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SocialAuthService, SocialUser } from "angularx-social-login";
-import {
-  FacebookLoginProvider,
-  GoogleLoginProvider
-} from "angularx-social-login";
+
 
 @Component({
   selector: 'app-navbar',

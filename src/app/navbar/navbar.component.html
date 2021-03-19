@@ -5,19 +5,16 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault" *ngIf="loggedIn">
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault" *ngIf="user">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
-      </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/library']" routerLinkActive="active">Library</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/Users']" routerLinkActive="active">Users</a>
+        <a class="nav-link" [routerLink]="['/users']" routerLinkActive="active">Users</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/Groups']" routerLinkActive="active">Groups</a>
+        <a class="nav-link" [routerLink]="['/groups']" routerLinkActive="active">Groups</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

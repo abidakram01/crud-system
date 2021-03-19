@@ -8,29 +8,31 @@ import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-logi
 import { GoogleLoginProvider } from 'angularx-social-login';
 
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
 import { LibraryComponent } from './library/library.component';
 import { UsersComponent } from './users/users.component';
 import { GroupsComponent } from './groups/groups.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CrudService } from './service/crud.service';
 import { LoginComponent } from './login/login.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
     LibraryComponent,
     UsersComponent,
     GroupsComponent,
-      LoginComponent
-   ],
+    LoginComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SocialLoginModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     CrudService,
