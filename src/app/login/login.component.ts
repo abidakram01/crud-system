@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { SocialAuthService, SocialUser } from "angularx-social-login";
 import {
   FacebookLoginProvider,
@@ -7,15 +8,15 @@ import {
 
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class LoginComponent implements OnInit {
   user: SocialUser;
   loggedIn: boolean;
 
-  constructor(private authService: SocialAuthService) {}
+  constructor(private authService: SocialAuthService, private router: Router) {}
   ngOnInit() {
     this.authService.authState.subscribe(user => {
       this.user = user;
@@ -25,7 +26,10 @@ export class DashboardComponent implements OnInit {
   
   signInWithGoogle(): void {
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
+    if (this.loggedIn) {
+      this.router.navigate(['/home']);
+    }
   }
 
- 
+
 }

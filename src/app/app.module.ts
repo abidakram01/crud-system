@@ -8,24 +8,24 @@ import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-logi
 import { GoogleLoginProvider } from 'angularx-social-login';
 
 import { NavbarComponent } from './navbar/navbar.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { LibraryComponent } from './library/library.component';
 import { UsersComponent } from './users/users.component';
 import { GroupsComponent } from './groups/groups.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CrudService } from './service/crud.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     NavbarComponent,
-    DashboardComponent,
     HomeComponent,
     LibraryComponent,
     UsersComponent,
-    GroupsComponent
-  ],
+    GroupsComponent,
+      LoginComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

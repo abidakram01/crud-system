@@ -16,10 +16,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    this.apiService.getUsers()
-      .subscribe(data => {
-        this.users = data.result;
-      });
+    this.apiService.getUsers().subscribe(result => {
+      this.users = result;
+    });
   }
 
   deleteUser(user: Crud): void {

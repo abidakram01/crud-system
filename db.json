@@ -1,28 +1,40 @@
 {
-  "result": [
-      {
-          "id": 1,
-          "firstName": "Devglan",
-          "lastName": "Devglan",
-          "username": "devglan",
-          "salary": 3456,
-          "age": 33
-      },
-      {
-          "id": 2,
-          "firstName": "Tom",
-          "lastName": "Asr",
-          "username": "tom234",
-          "salary": 7823,
-          "age": 23
-      },
-      {
-          "id": 3,
-          "firstName": "Adam",
-          "lastName": "Psr",
-          "username": "adam",
-          "salary": 4234,
-          "age": 45
-      }
-  ]
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "firstName": "Michael",
+            "lastName": "Lawson"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "firstName": "Lindsay",
+            "lastName": "Ferguson"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "firstName": "Tobias",
+            "lastName": "Funke"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "firstName": "Byron",
+            "lastName": "Fields"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "firstName": "George",
+            "lastName": "Edwards"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "firstName": "Rachel",
+            "lastName": "Howell"
+        }
+    ]
 }

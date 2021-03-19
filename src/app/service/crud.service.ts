@@ -9,12 +9,12 @@ import { ApiResponse } from '../shared/api.response';
   providedIn: 'root'
 })
 export class CrudService {
-  baseUrl: string = 'http://localhost:3000/result';
+  baseUrl: string = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
 
-  getUsers() : Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(this.baseUrl);
+  getUsers() : Observable<any> {
+    return this.http.get(`${this.baseUrl}/data`);
   }
 
   getUserById(id: number): Observable<ApiResponse> {
